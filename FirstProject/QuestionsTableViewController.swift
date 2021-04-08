@@ -8,6 +8,8 @@
 import UIKit
 
 class QuestionsTableViewController: UITableViewController {
+    
+    var questions: [Question] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,27 +21,45 @@ class QuestionsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    @IBAction func cancelButtonTap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func saveButtonTap(_ sender: Any) {
+        var newQuestions: [Question] = []
+        for rowIndex in 0..<tableView(self.tableView, numberOfRowsInSection: 0) {
+            let cell = tableView.cellForRow(at: IndexPath(row: rowIndex, section: 0)) as! QuestionFormTableViewCell
+            let a = Question(question: cell.question.text, wrongAnswer1: <#T##String#>, wrongAnswer2: <#T##String#>, wrongAnswer3: <#T##String#>, rightAnswer: <#T##String#>)
+            newQuestions.append(a)
+        }
+        // save questions to file
+    }
+    
+    @IBAction func addButtonTap(_ sender: Any) {
+        let a = Question(question: "", wrongAnswer1: "", wrongAnswer2: "", wrongAnswer3: "", rightAnswer: "")
+        questions.append(a)
+        tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return questions.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

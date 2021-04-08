@@ -18,6 +18,8 @@
 		92383A3B261C63AB003FE21B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A3A261C63AB003FE21B /* GameViewController.swift */; };
 		92383A3E261C6551003FE21B /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A3D261C6551003FE21B /* QuestionsTableViewController.swift */; };
 		92383A41261C71BB003FE21B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A40261C71BB003FE21B /* ResultViewController.swift */; };
+		92383A44261F01DC003FE21B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A43261F01DC003FE21B /* Models.swift */; };
+		92383A47261F178B003FE21B /* QuestionFormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A46261F178B003FE21B /* QuestionFormTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		92383A3A261C63AB003FE21B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		92383A3D261C6551003FE21B /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
 		92383A40261C71BB003FE21B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		92383A43261F01DC003FE21B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		92383A46261F178B003FE21B /* QuestionFormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFormTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 		92383A0E261C4B41003FE21B = {
 			isa = PBXGroup;
 			children = (
+				92383A43261F01DC003FE21B /* Models.swift */,
 				92383A40261C71BB003FE21B /* ResultViewController.swift */,
 				92383A19261C4B41003FE21B /* FirstProject */,
 				92383A18261C4B41003FE21B /* Products */,
@@ -78,6 +83,7 @@
 				92383A3A261C63AB003FE21B /* GameViewController.swift */,
 				92383A25261C4B4A003FE21B /* LaunchScreen.storyboard */,
 				92383A28261C4B4A003FE21B /* Info.plist */,
+				92383A46261F178B003FE21B /* QuestionFormTableViewCell.swift */,
 			);
 			path = FirstProject;
 			sourceTree = "<group>";
@@ -153,11 +159,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				92383A3E261C6551003FE21B /* QuestionsTableViewController.swift in Sources */,
+				92383A47261F178B003FE21B /* QuestionFormTableViewCell.swift in Sources */,
 				92383A30261C4D45003FE21B /* TaskFile.swift in Sources */,
 				92383A1F261C4B41003FE21B /* ViewController.swift in Sources */,
 				92383A41261C71BB003FE21B /* ResultViewController.swift in Sources */,
 				92383A1B261C4B41003FE21B /* AppDelegate.swift in Sources */,
 				92383A1D261C4B41003FE21B /* SceneDelegate.swift in Sources */,
+				92383A44261F01DC003FE21B /* Models.swift in Sources */,
 				92383A3B261C63AB003FE21B /* GameViewController.swift in Sources */,
 				92383A38261C6358003FE21B /* MainViewController.swift in Sources */,
 			);
