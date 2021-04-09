@@ -10,7 +10,6 @@ import UIKit
 class QuestionFormTableViewCell: UITableViewCell {
 
     @IBOutlet weak var wrong2Answer: UITextView!
-    
     @IBOutlet weak var question: UITextView!
     @IBOutlet weak var wrong3Answer: UITextView!
     @IBOutlet weak var wrong1Answer: UITextView!

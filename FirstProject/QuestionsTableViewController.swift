@@ -29,7 +29,7 @@ class QuestionsTableViewController: UITableViewController {
         var newQuestions: [Question] = []
         for rowIndex in 0..<tableView(self.tableView, numberOfRowsInSection: 0) {
             let cell = tableView.cellForRow(at: IndexPath(row: rowIndex, section: 0)) as! QuestionFormTableViewCell
-            let a = Question(question: cell.question.text, wrongAnswer1: <#T##String#>, wrongAnswer2: <#T##String#>, wrongAnswer3: <#T##String#>, rightAnswer: <#T##String#>)
+            let a = Question(question: cell.question.text, wrongAnswer1: cell.wrong1Answer.text, wrongAnswer2: cell.wrong2Answer.text, wrongAnswer3: cell.wrong3Answer.text, rightAnswer: cell.rightAnswer.text)
             newQuestions.append(a)
         }
         // save questions to file
