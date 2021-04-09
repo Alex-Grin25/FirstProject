@@ -21,6 +21,7 @@
 		92383A44261F01DC003FE21B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A43261F01DC003FE21B /* Models.swift */; };
 		92383A47261F178B003FE21B /* QuestionFormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A46261F178B003FE21B /* QuestionFormTableViewCell.swift */; };
 		92383A4A262033A1003FE21B /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A49262033A1003FE21B /* RealmData.swift */; };
+		92383A4D26204420003FE21B /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A4C26204420003FE21B /* InformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		92383A43261F01DC003FE21B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		92383A46261F178B003FE21B /* QuestionFormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFormTableViewCell.swift; sourceTree = "<group>"; };
 		92383A49262033A1003FE21B /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		92383A4C26204420003FE21B /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 			children = (
 				92383A49262033A1003FE21B /* RealmData.swift */,
 				92383A43261F01DC003FE21B /* Models.swift */,
-				92383A40261C71BB003FE21B /* ResultViewController.swift */,
 				92383A19261C4B41003FE21B /* FirstProject */,
 				92383A18261C4B41003FE21B /* Products */,
 			);
@@ -78,6 +79,8 @@
 				92383A1A261C4B41003FE21B /* AppDelegate.swift */,
 				92383A1C261C4B41003FE21B /* SceneDelegate.swift */,
 				92383A1E261C4B41003FE21B /* ViewController.swift */,
+				92383A4C26204420003FE21B /* InformationViewController.swift */,
+				92383A40261C71BB003FE21B /* ResultViewController.swift */,
 				92383A20261C4B41003FE21B /* Main.storyboard */,
 				92383A3D261C6551003FE21B /* QuestionsTableViewController.swift */,
 				92383A37261C6358003FE21B /* MainViewController.swift */,
@@ -172,6 +175,7 @@
 				92383A44261F01DC003FE21B /* Models.swift in Sources */,
 				92383A3B261C63AB003FE21B /* GameViewController.swift in Sources */,
 				92383A38261C6358003FE21B /* MainViewController.swift in Sources */,
+				92383A4D26204420003FE21B /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
