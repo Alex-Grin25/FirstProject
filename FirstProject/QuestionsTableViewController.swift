@@ -7,9 +7,9 @@
 
 import UIKit
 
-class QuestionsTableViewController: UITableViewController {
+class QuestionsTableViewController: UITableViewController, UITextViewDelegate {
     
-    var questions: [Question] = []
+    var questions: [Question] = Storage.loadQuestions()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,17 +26,13 @@ class QuestionsTableViewController: UITableViewController {
     }
     
     @IBAction func saveButtonTap(_ sender: Any) {
-        var newQuestions: [Question] = []
-        for rowIndex in 0..<tableView(self.tableView, numberOfRowsInSection: 0) {
-            let cell = tableView.cellForRow(at: IndexPath(row: rowIndex, section: 0)) as! QuestionFormTableViewCell
-            let a = Question(question: cell.question.text, wrongAnswer1: cell.wrong1Answer.text, wrongAnswer2: cell.wrong2Answer.text, wrongAnswer3: cell.wrong3Answer.text, rightAnswer: cell.rightAnswer.text)
-            newQuestions.append(a)
-        }
         // save questions to file
+        Storage.saveQuestions(questions)
     }
     
     @IBAction func addButtonTap(_ sender: Any) {
-        let a = Question(question: "", wrongAnswer1: "", wrongAnswer2: "", wrongAnswer3: "", rightAnswer: "")
+        // save
+        let a = Question(question: "Enter question", wrongAnswer1: "Enter wrong answer", wrongAnswer2: "Enter wrong answer", wrongAnswer3: "Enter wrong answer", rightAnswer: "Enter right answer")
         questions.append(a)
         tableView.reloadData()
     }
@@ -54,9 +50,9 @@ class QuestionsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "newQuestionCell", for: indexPath) as! QuestionFormTableViewCell
 
-        // Configure the cell...
+        cell.configure(question: questions[indexPath.row])
 
         return cell
     }
@@ -95,6 +91,32 @@ class QuestionsTableViewController: UITableViewController {
         return true
     }
     */
+    
+    // MARK: - Text view delegate
+    
+    func textViewDidChange(_ textView: UITextView) {
+        if let cell = textView.superview?.superview as? QuestionFormTableViewCell,
+           let indexPath = tableView.indexPath(for: cell) {
+            // save question
+            switch QuestionTextViewType(rawValue: textView.tag) {
+            case .WrongAnswer3:
+                questions[indexPath.row].wrongAnswer3 = textView.text;
+                break;
+            case .WrongAnswer2:
+                questions[indexPath.row].wrongAnswer2 = textView.text;
+                break;
+            case .WrongAnswer1:
+                questions[indexPath.row].wrongAnswer1 = textView.text;
+                break;
+            case .RightAnswer:
+                questions[indexPath.row].rightAnswer = textView.text;
+                break;
+            default:
+                questions[indexPath.row].question = textView.text;
+                break;
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

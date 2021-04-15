@@ -115,82 +115,97 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="366" id="WaS-so-w70" customClass="QuestionFormTableViewCell" customModule="FirstProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="366"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newQuestionCell" id="WaS-so-w70" customClass="QuestionFormTableViewCell" customModule="FirstProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="295.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WaS-so-w70" id="zbI-FI-ekQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="295.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j1c-FI-wbN">
-                                            <rect key="frame" x="41.5" y="8" width="331" height="146.5"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Enter question" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j1c-FI-wbN">
+                                            <rect key="frame" x="41.5" y="8" width="331" height="118"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                             <color key="textColor" systemColor="labelColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="XyX-5L-4gA" id="ap0-9a-q5Q"/>
+                                            </connections>
                                         </textView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="enter right answer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ztL-kz-RSF">
-                                            <rect key="frame" x="20.5" y="162.5" width="373" height="36.5"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="enter right answer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ztL-kz-RSF">
+                                            <rect key="frame" x="20.5" y="134" width="373" height="30"/>
                                             <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <color key="textColor" systemColor="labelColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="XyX-5L-4gA" id="728-Op-nNR"/>
+                                            </connections>
                                         </textView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b8M-KN-UJc">
-                                            <rect key="frame" x="20.5" y="251.5" width="373" height="36.5"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b8M-KN-UJc">
+                                            <rect key="frame" x="20.5" y="209.5" width="373" height="29.5"/>
                                             <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.53328214730000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <color key="textColor" systemColor="labelColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="XyX-5L-4gA" id="c1P-Lx-HfJ"/>
+                                            </connections>
                                         </textView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j6P-po-16U">
-                                            <rect key="frame" x="20.5" y="296" width="373" height="37"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j6P-po-16U">
+                                            <rect key="frame" x="20.5" y="247" width="373" height="29.5"/>
                                             <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.53328214730000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <color key="textColor" systemColor="labelColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="XyX-5L-4gA" id="gnw-xo-wTN"/>
+                                            </connections>
                                         </textView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z3e-Ew-K7n">
-                                            <rect key="frame" x="20.5" y="207" width="373" height="36.5"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z3e-Ew-K7n">
+                                            <rect key="frame" x="20.5" y="172" width="373" height="29.5"/>
                                             <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.53328214733805879" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <color key="textColor" systemColor="labelColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="XyX-5L-4gA" id="sNW-C0-gjx"/>
+                                            </connections>
                                         </textView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="j6P-po-16U" firstAttribute="height" secondItem="zbI-FI-ekQ" secondAttribute="height" multiplier="0.1" id="7tw-Tb-ygv"/>
+                                        <constraint firstItem="j6P-po-16U" firstAttribute="height" secondItem="zbI-FI-ekQ" secondAttribute="height" multiplier="0.1" placeholder="YES" id="7tw-Tb-ygv"/>
                                         <constraint firstItem="b8M-KN-UJc" firstAttribute="top" secondItem="Z3e-Ew-K7n" secondAttribute="bottom" constant="8" id="BLV-KG-LOw"/>
                                         <constraint firstItem="j1c-FI-wbN" firstAttribute="width" secondItem="zbI-FI-ekQ" secondAttribute="width" multiplier="0.8" id="HPM-b5-1ma"/>
                                         <constraint firstItem="j6P-po-16U" firstAttribute="centerX" secondItem="zbI-FI-ekQ" secondAttribute="centerX" id="Ioq-5e-XVf"/>
                                         <constraint firstItem="ztL-kz-RSF" firstAttribute="width" secondItem="zbI-FI-ekQ" secondAttribute="width" multiplier="0.9" id="Jwa-kw-hMg"/>
-                                        <constraint firstItem="Z3e-Ew-K7n" firstAttribute="height" secondItem="zbI-FI-ekQ" secondAttribute="height" multiplier="0.1" id="LWP-Jf-cmf"/>
+                                        <constraint firstItem="Z3e-Ew-K7n" firstAttribute="height" secondItem="zbI-FI-ekQ" secondAttribute="height" multiplier="0.1" placeholder="YES" id="LWP-Jf-cmf"/>
                                         <constraint firstItem="Z3e-Ew-K7n" firstAttribute="top" secondItem="ztL-kz-RSF" secondAttribute="bottom" constant="8" id="PsG-2T-cj1"/>
-                                        <constraint firstItem="b8M-KN-UJc" firstAttribute="height" secondItem="zbI-FI-ekQ" secondAttribute="height" multiplier="0.1" id="Ugr-MH-1VV"/>
+                                        <constraint firstItem="b8M-KN-UJc" firstAttribute="height" secondItem="zbI-FI-ekQ" secondAttribute="height" multiplier="0.1" placeholder="YES" id="Ugr-MH-1VV"/>
                                         <constraint firstItem="ztL-kz-RSF" firstAttribute="top" secondItem="j1c-FI-wbN" secondAttribute="bottom" constant="8" id="W9w-4D-A5D"/>
-                                        <constraint firstItem="j1c-FI-wbN" firstAttribute="height" secondItem="zbI-FI-ekQ" secondAttribute="height" multiplier="0.4" id="XDY-K8-QsK"/>
+                                        <constraint firstItem="j1c-FI-wbN" firstAttribute="height" secondItem="zbI-FI-ekQ" secondAttribute="height" multiplier="0.4" placeholder="YES" id="XDY-K8-QsK"/>
                                         <constraint firstItem="Z3e-Ew-K7n" firstAttribute="centerX" secondItem="zbI-FI-ekQ" secondAttribute="centerX" id="a5E-li-gfo"/>
                                         <constraint firstItem="b8M-KN-UJc" firstAttribute="centerX" secondItem="zbI-FI-ekQ" secondAttribute="centerX" id="b2B-Dp-5Id"/>
                                         <constraint firstItem="ztL-kz-RSF" firstAttribute="centerX" secondItem="zbI-FI-ekQ" secondAttribute="centerX" id="bQV-Xr-48O"/>
                                         <constraint firstItem="j6P-po-16U" firstAttribute="top" secondItem="b8M-KN-UJc" secondAttribute="bottom" constant="8" id="cc1-6M-fgu"/>
-                                        <constraint firstItem="ztL-kz-RSF" firstAttribute="height" secondItem="zbI-FI-ekQ" secondAttribute="height" multiplier="0.1" id="fZL-IG-yAP"/>
+                                        <constraint firstItem="ztL-kz-RSF" firstAttribute="height" secondItem="zbI-FI-ekQ" secondAttribute="height" multiplier="0.1" placeholder="YES" id="fZL-IG-yAP"/>
                                         <constraint firstItem="Z3e-Ew-K7n" firstAttribute="width" secondItem="zbI-FI-ekQ" secondAttribute="width" multiplier="0.9" id="fuO-d4-Ky7"/>
                                         <constraint firstItem="j1c-FI-wbN" firstAttribute="centerX" secondItem="zbI-FI-ekQ" secondAttribute="centerX" id="hXt-ar-pbW"/>
                                         <constraint firstItem="b8M-KN-UJc" firstAttribute="width" secondItem="zbI-FI-ekQ" secondAttribute="width" multiplier="0.9" id="iHI-Qh-A1R"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="j6P-po-16U" secondAttribute="bottom" constant="8" id="kCL-Fw-zmJ"/>
                                         <constraint firstItem="j1c-FI-wbN" firstAttribute="top" secondItem="zbI-FI-ekQ" secondAttribute="top" constant="8" id="lrI-s3-eCf"/>
                                         <constraint firstItem="j6P-po-16U" firstAttribute="width" secondItem="zbI-FI-ekQ" secondAttribute="width" multiplier="0.9" id="srR-jM-vKy"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="question" destination="j1c-FI-wbN" id="iuW-Mg-ClT"/>
-                                    <outlet property="rightAnswer" destination="ztL-kz-RSF" id="fca-79-Hl3"/>
-                                    <outlet property="wrong1Answer" destination="Z3e-Ew-K7n" id="5tL-Rd-Oqb"/>
-                                    <outlet property="wrong2Answer" destination="b8M-KN-UJc" id="WR9-ZM-LOh"/>
-                                    <outlet property="wrong3Answer" destination="j6P-po-16U" id="w3m-ed-BHR"/>
+                                    <outlet property="questionTextView" destination="j1c-FI-wbN" id="iuW-Mg-ClT"/>
+                                    <outlet property="rightAnswerTextView" destination="ztL-kz-RSF" id="fca-79-Hl3"/>
+                                    <outlet property="wrong1AnswerTextView" destination="Z3e-Ew-K7n" id="5tL-Rd-Oqb"/>
+                                    <outlet property="wrong2AnswerTextView" destination="b8M-KN-UJc" id="WR9-ZM-LOh"/>
+                                    <outlet property="wrong3AnswerTextView" destination="j6P-po-16U" id="w3m-ed-BHR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

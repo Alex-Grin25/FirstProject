@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9237207E262859AF00AC49C5 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9237207D262859AF00AC49C5 /* Storage.swift */; };
 		92383A1B261C4B41003FE21B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A1A261C4B41003FE21B /* AppDelegate.swift */; };
 		92383A1D261C4B41003FE21B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A1C261C4B41003FE21B /* SceneDelegate.swift */; };
 		92383A1F261C4B41003FE21B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92383A1E261C4B41003FE21B /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9237207D262859AF00AC49C5 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		92383A17261C4B41003FE21B /* FirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92383A1A261C4B41003FE21B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92383A1C261C4B41003FE21B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				92383A49262033A1003FE21B /* RealmData.swift */,
+				9237207D262859AF00AC49C5 /* Storage.swift */,
 				92383A43261F01DC003FE21B /* Models.swift */,
 				92383A19261C4B41003FE21B /* FirstProject */,
 				92383A18261C4B41003FE21B /* Products */,
@@ -172,6 +175,7 @@
 				92383A1B261C4B41003FE21B /* AppDelegate.swift in Sources */,
 				92383A4A262033A1003FE21B /* RealmData.swift in Sources */,
 				92383A1D261C4B41003FE21B /* SceneDelegate.swift in Sources */,
+				9237207E262859AF00AC49C5 /* Storage.swift in Sources */,
 				92383A44261F01DC003FE21B /* Models.swift in Sources */,
 				92383A3B261C63AB003FE21B /* GameViewController.swift in Sources */,
 				92383A38261C6358003FE21B /* MainViewController.swift in Sources */,
